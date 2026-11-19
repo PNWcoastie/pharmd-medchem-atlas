@@ -1,0 +1,28 @@
+name: Feedback or Bug Report
+description: Share UI/UX feedback, scientific review notes, or bug reports
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share suggestions, accessibility feedback, or scientific/clinical notes regarding **PharmD MedChem Atlas**.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Medicinal Chemistry / 2D Structure Depiction
+        - Clinical Pharmacology Monograph / Quiz
+        - Pharmaceutics & Kinetics
+        - UI / Sepia Design / Accessibility
+        - Feature Request
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe your observation, suggestion, or reproduction context.
+    validations:
+      required: true

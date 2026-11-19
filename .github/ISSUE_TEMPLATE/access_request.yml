@@ -1,0 +1,41 @@
+name: Private Beta Access Request
+description: Request collaborator evaluation access to PharmD MedChem Atlas
+title: "[Access Request]: "
+labels: ["access-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in **PharmD MedChem Atlas**. Complete the fields below to request invited collaborator evaluation access.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Preferred Platform / Environment
+      options:
+        - Web (Chrome / Firefox / Safari)
+        - Linux Desktop
+        - macOS Desktop
+        - Windows Desktop
+        - Mobile (iOS / Android)
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Background / Role
+      options:
+        - Pharmacy Student / NAPLEX Candidate
+        - Pharmacist / Clinical Educator
+        - Medicinal Chemistry / Cheminformatics Researcher
+        - Software / UI Engineer
+        - Recruiter / Portfolio Reviewer
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Intended Use Case or Evaluation Interest
+      description: Briefly describe what you are interested in evaluating (e.g., 2D IUPAC skeletal rendering, SAR/ADME quiz engine, Top-200 pharmacology prep, or accessibility architecture).
+      placeholder: "Interested in evaluating the 2D skeletal renderer and MedChem quiz workflows..."
+    validations:
+      required: true
